@@ -2,7 +2,7 @@
 //  ShipPropertyView.swift
 //  Star Wars Ships
 //
-//  Created by 🦋 Aurelie 🦋 on 17/9/21.
+//  Created by Geoff Burns on 17/9/21.
 //
 
 import SwiftUI
