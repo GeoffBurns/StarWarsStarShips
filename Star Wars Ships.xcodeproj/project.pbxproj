@@ -26,6 +26,8 @@
 		65486CB926F395C900845959 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB826F395C900845959 /* NavigationViews.swift */; };
 		65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBA26F39D8600845959 /* FavouriteView.swift */; };
 		65486CBD26F3FD9100845959 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBC26F3FD9100845959 /* LogoView.swift */; };
+		65486CBF26F3FFDF00845959 /* ShipMetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBE26F3FFDF00845959 /* ShipMetricView.swift */; };
+		65486CC126F4007700845959 /* ShipPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC026F4007700845959 /* ShipPropertyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		65486CB826F395C900845959 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
 		65486CBA26F39D8600845959 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		65486CBC26F3FD9100845959 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		65486CBE26F3FFDF00845959 /* ShipMetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMetricView.swift; sourceTree = "<group>"; };
+		65486CC026F4007700845959 /* ShipPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPropertyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,8 @@
 				65486CB826F395C900845959 /* NavigationViews.swift */,
 				65486CBA26F39D8600845959 /* FavouriteView.swift */,
 				65486CBC26F3FD9100845959 /* LogoView.swift */,
+				65486CBE26F3FFDF00845959 /* ShipMetricView.swift */,
+				65486CC026F4007700845959 /* ShipPropertyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,11 +338,13 @@
 			files = (
 				65486CAF26F3531E00845959 /* ShipListItemView.swift in Sources */,
 				65486CB726F3953F00845959 /* ShipsLoadingView.swift in Sources */,
+				65486CBF26F3FFDF00845959 /* ShipMetricView.swift in Sources */,
 				65486CB326F37E5D00845959 /* CustomCache.swift in Sources */,
 				65486CAD26F34BE200845959 /* ShipListView.swift in Sources */,
 				65486C7426F334A000845959 /* StarWarsShipsApp.swift in Sources */,
 				65486CAB26F348A200845959 /* ShipListViewModel.swift in Sources */,
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
+				65486CC126F4007700845959 /* ShipPropertyView.swift in Sources */,
 				65486CA726F33DE500845959 /* Ship.swift in Sources */,
 				65486CB526F38B8900845959 /* Favourites.swift in Sources */,
 				65486CB926F395C900845959 /* NavigationViews.swift in Sources */,
