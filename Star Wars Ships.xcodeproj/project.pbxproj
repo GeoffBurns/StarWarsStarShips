@@ -25,6 +25,7 @@
 		65486CB726F3953F00845959 /* ShipsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB626F3953F00845959 /* ShipsLoadingView.swift */; };
 		65486CB926F395C900845959 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB826F395C900845959 /* NavigationViews.swift */; };
 		65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBA26F39D8600845959 /* FavouriteView.swift */; };
+		65486CBD26F3FD9100845959 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBC26F3FD9100845959 /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		65486CB626F3953F00845959 /* ShipsLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsLoadingView.swift; sourceTree = "<group>"; };
 		65486CB826F395C900845959 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
 		65486CBA26F39D8600845959 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		65486CBC26F3FD9100845959 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				65486CB626F3953F00845959 /* ShipsLoadingView.swift */,
 				65486CB826F395C900845959 /* NavigationViews.swift */,
 				65486CBA26F39D8600845959 /* FavouriteView.swift */,
+				65486CBC26F3FD9100845959 /* LogoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */,
 				65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */,
 				65486CA526F33BA500845959 /* FetchError.swift in Sources */,
+				65486CBD26F3FD9100845959 /* LogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
