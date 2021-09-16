@@ -28,6 +28,7 @@
 		65486CBD26F3FD9100845959 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBC26F3FD9100845959 /* LogoView.swift */; };
 		65486CBF26F3FFDF00845959 /* ShipMetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBE26F3FFDF00845959 /* ShipMetricView.swift */; };
 		65486CC126F4007700845959 /* ShipPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC026F4007700845959 /* ShipPropertyView.swift */; };
+		65486CC326F403DB00845959 /* string+isNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC226F403DB00845959 /* string+isNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		65486CBC26F3FD9100845959 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		65486CBE26F3FFDF00845959 /* ShipMetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMetricView.swift; sourceTree = "<group>"; };
 		65486CC026F4007700845959 /* ShipPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPropertyView.swift; sourceTree = "<group>"; };
+		65486CC226F403DB00845959 /* string+isNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+isNumber.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				65486C7726F334A300845959 /* Assets.xcassets */,
 				65486C7C26F334A300845959 /* Info.plist */,
 				65486C7926F334A300845959 /* Preview Content */,
+				65486CC226F403DB00845959 /* string+isNumber.swift */,
 			);
 			path = "Star Wars Ships";
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				65486CAB26F348A200845959 /* ShipListViewModel.swift in Sources */,
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
 				65486CC126F4007700845959 /* ShipPropertyView.swift in Sources */,
+				65486CC326F403DB00845959 /* string+isNumber.swift in Sources */,
 				65486CA726F33DE500845959 /* Ship.swift in Sources */,
 				65486CB526F38B8900845959 /* Favourites.swift in Sources */,
 				65486CB926F395C900845959 /* NavigationViews.swift in Sources */,

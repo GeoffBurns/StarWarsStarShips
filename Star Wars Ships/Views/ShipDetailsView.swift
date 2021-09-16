@@ -7,13 +7,7 @@
 
 import SwiftUI
 
-extension String  {
-    var isNumber: Bool {
-        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits
-                                                .union(CharacterSet.punctuationCharacters)
-                                                .inverted) == nil
-    }
-}
+
 
 struct ShipTitleView: View {
     var ship : Ship
