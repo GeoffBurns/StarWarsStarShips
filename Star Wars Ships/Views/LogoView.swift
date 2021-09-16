@@ -15,7 +15,17 @@ struct LogoView: View {
                 .opacity(0.2)
         }
 }
-
+struct LogosView: View { 
+        var body: some View {
+            HStack
+            {
+                LogoView(logo: "rebel")
+                LogoView(logo: "imperial")
+                LogoView(logo: "republic")
+                LogoView(logo: "jedi2")
+            }
+        }
+}
 struct LogoView_Previews: PreviewProvider {
     static var previews: some View {
         LogoView(logo: "rebel")

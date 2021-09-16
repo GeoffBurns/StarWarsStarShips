@@ -115,13 +115,7 @@ struct ShipDetailsView: View {
             ShipEngineView(ship:ship)
             ShipPropertyView(label: "Starship Class", property: ship.starshipClass, font: font)
             Spacer()
-            HStack
-            {
-                LogoView(logo: "rebel")
-                LogoView(logo: "imperial")
-                LogoView(logo: "republic")
-                LogoView(logo: "jedi2")
-            }
+            LogosView()
         }
         .padding(10)
     .navigationTitle(ship.name)
