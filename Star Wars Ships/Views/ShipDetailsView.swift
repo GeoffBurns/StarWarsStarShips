@@ -99,6 +99,15 @@ struct ShipEngineView: View {
             }
         }
 }
+
+struct LogoView: View {
+        var logo : String
+        var body: some View {
+            Image(logo).resizable()
+                .aspectRatio(contentMode: .fit)
+                .opacity(0.2)
+        }
+}
 struct ShipDetailsView: View {
     var ship : Ship
     var font  = Font.caption
@@ -113,6 +122,13 @@ struct ShipDetailsView: View {
             ShipEngineView(ship:ship)
             ShipPropertyView(label: "Starship Class", property: ship.starshipClass, font: font)
             Spacer()
+            HStack
+            {
+                LogoView(logo: "rebel")
+                LogoView(logo: "imperial")
+                LogoView(logo: "republic")
+                LogoView(logo: "jedi2")
+            }
         }
         .padding(10)
     .navigationTitle(ship.name)
