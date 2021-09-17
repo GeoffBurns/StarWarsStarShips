@@ -12,6 +12,7 @@ import Combine
 struct Fetcher {
     
     static let cache = CustomCache<String, Decodable>()
+    static let shared = Fetcher()
     
     func fetch<T>(from url: String) -> AnyPublisher<T, FetchError> where T: Decodable {
         let decoder = JSONDecoder()

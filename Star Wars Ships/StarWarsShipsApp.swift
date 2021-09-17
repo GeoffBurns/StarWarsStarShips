@@ -11,7 +11,7 @@ import SwiftUI
 struct StarWarsShipsApp: App {
     var body: some Scene {
         WindowGroup {
-            ShipListView()
+            ShipPageView()
                 .environmentObject(ShipListViewModel())
                 .environmentObject(Favourites())
         }

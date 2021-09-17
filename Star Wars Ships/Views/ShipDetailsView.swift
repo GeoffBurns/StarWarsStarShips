@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ShipTitleView: View {
     var ship : Ship
     var body: some View {
@@ -33,7 +31,6 @@ struct ShipBuildByView: View {
         }
     }
 }
-
 struct ShipCapacityView: View {
     var ship : Ship
     var font  = Font.caption
@@ -66,9 +63,7 @@ struct ShipEngineView: View {
             }
         }
 }
-
-
-struct ShipDetailsView: View {
+struct ShipInfoView: View {
     var ship : Ship
     var font  = Font.caption
     var body: some View {
@@ -81,16 +76,31 @@ struct ShipDetailsView: View {
             ShipCapacityView(ship:ship)
             ShipEngineView(ship:ship)
             ShipPropertyView(label: "Starship Class", property: ship.starshipClass, font: font)
-            Spacer()
-            LogosView()
+            FilmView(ship: ship)
+            PilotView(ship: ship)
+        }
+    }
+}
+struct ShipDetailsView: View {
+    var ship : Ship
+    var font  = Font.caption
+    var body: some View {
+        ZStack
+        {
+            VStack (alignment: .leading, spacing: 15) {
+                Spacer()
+                LogosView()
+            }
+            VStack (alignment: .leading, spacing: 15) {
+                ShipInfoView(ship: ship)
+                Spacer()
+            }
         }
         .padding(10)
     .navigationTitle(ship.name)
     .navigationBarTitleDisplayMode(.inline)
     }
 }
-    
-
 struct ShipDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         ShipDetailsView(ship: Ship.Mock)

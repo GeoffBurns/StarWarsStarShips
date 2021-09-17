@@ -11,7 +11,7 @@ struct ShipsLoadingView: View {
  
 var body: some View {
   
-    VStack {
+    VStack (alignment:  .center) {
         Text("Fetching Data").foregroundColor(.gray)
         ProgressView()
      }

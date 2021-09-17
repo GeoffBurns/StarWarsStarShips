@@ -7,30 +7,14 @@
 
 import SwiftUI
 
+struct ShipPageView: View {
 
-struct ShipListView: View {
     @EnvironmentObject var listViewModel : ShipListViewModel
-
     var body: some View {
         NavigationView {
             VStack{
                 TopNavigationView()
-            List(self.listViewModel.ships) { ship in
-                if ship.id == Ship.Loading.id
-                {
-                    ShipsLoadingView()
-                } else
-                {
-                    HStack (alignment: .top) {
-                        NavigationLink(
-                            destination: ShipDetailsView(ship: ship))
-                            {
-                                ShipListItemView(ship: ship)
-                            }
-                        FavouriteView(ship: ship, size: 15)
-                    }
-                }
-            }
+                ShipListView()
                 BottomNavigationView()
             }
             .navigationBarTitle("Star Wars Starships")
@@ -40,9 +24,34 @@ struct ShipListView: View {
         }
     }
 }
+struct ShipListView: View {
+    @EnvironmentObject var listViewModel : ShipListViewModel
+
+    var body: some View {
+        VStack {
+                List(self.listViewModel.ships, id: \.url) { ship in
+                   if ship.name == Ship.Loading.name
+                    {
+                    ShipsLoadingView()
+                    }
+                   else
+                    {
+                    HStack (alignment: .top) {
+                        NavigationLink(
+                            destination: ShipDetailsView(ship: ship))
+                            {
+                                ShipListItemView(ship: ship)
+                            }
+                        FavouriteView(ship: ship, size: 15)
+                        }
+                    }
+                }
+        }
+    }
+}
 
 struct ShipListView_Previews: PreviewProvider {
     static var previews: some View {
-        ShipListView()
+        ShipPageView().environmentObject(ShipListViewModel())
     }
 }

@@ -12,7 +12,7 @@ struct LogoView: View {
         var body: some View {
             Image(logo).resizable()
                 .aspectRatio(contentMode: .fit)
-                .opacity(0.2)
+                .opacity(0.14)
         }
 }
 struct LogosView: View { 

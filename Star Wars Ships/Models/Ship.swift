@@ -8,8 +8,7 @@
 import Foundation
  
 
-struct Ship: Codable, Identifiable {
-    let id = UUID() // ToDo define a CodingKeys
+struct Ship: Codable {
     let name: String
     let model: String
     let manufacturer: String
@@ -37,28 +36,5 @@ struct Ship: Codable, Identifiable {
                               created: "", edited:"", url: "")
 }
 
-/*
  
-/// ToDo fetch film and people data to show on Detail screen
- 
-struct Film: Codable, Identifiable {
-    let id = UUID()
-    let title: String
-    let episodeId: String
-    let openingCrawl: String
-    let director: String
-    let producer: String
-    let created: String
-    let edited: String
-    let url: String
-}
- 
-struct People: Codable, Identifiable {
-    let id = UUID()
-    let name: String
-    let created: String
-    let edited: String
-    let url: String
-}
- */
 

@@ -8,15 +8,10 @@
 import Foundation
 import Combine
 import SwiftUI
+ 
 
-
-protocol ShipService {
-    func getFirstShips()
-    func getNextShips()
-    func getPreviousShips()
-}
-
-class ShipListViewModel: ObservableObject, ShipService {
+    
+class ShipListViewModel: ObservableObject  {
     var fetcher: Fetcher = Fetcher()
     static var urlOfFirstPage = "https://swapi.dev/api/starships"
     @Published var ships = [Ship.Loading]
@@ -29,6 +24,7 @@ class ShipListViewModel: ObservableObject, ShipService {
         return fetcher.fetch(from: url)
             .eraseToAnyPublisher()
     }
+
     func getFirstShips()
     {
         getPageOfShips(url: ShipListViewModel.urlOfFirstPage)
