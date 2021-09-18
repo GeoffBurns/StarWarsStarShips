@@ -26,7 +26,7 @@ struct ShipPageView: View {
 }
 struct ShipListView: View {
     @EnvironmentObject var listViewModel : ShipListViewModel
-
+    
     var body: some View {
         VStack {
                 List(self.listViewModel.ships, id: \.url) { ship in
@@ -41,7 +41,7 @@ struct ShipListView: View {
                             destination: ShipDetailsView(ship: ship))
                             {
                                 ShipListItemView(ship: ship)
-                            }
+                             }.disabled(self.listViewModel.ships.count < 2)
                         FavouriteView(ship: ship, size: 15)
                         }
                     }

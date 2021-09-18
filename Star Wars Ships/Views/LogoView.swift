@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct LogoView: View {
+        @Environment(\.colorScheme) var colorScheme
+
         var logo : String
         var body: some View {
-            Image(logo).resizable()
+            Image(colorScheme == .dark ? logo + "_d" : logo).resizable()
                 .aspectRatio(contentMode: .fit)
                 .opacity(0.14)
         }
