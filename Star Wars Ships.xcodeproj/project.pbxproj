@@ -22,12 +22,12 @@
 		65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB026F3591D00845959 /* ShipDetailsView.swift */; };
 		65486CB326F37E5D00845959 /* CustomCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB226F37E5D00845959 /* CustomCache.swift */; };
 		65486CB526F38B8900845959 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB426F38B8900845959 /* Favourites.swift */; };
-		65486CB726F3953F00845959 /* ShipsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB626F3953F00845959 /* ShipsLoadingView.swift */; };
+		65486CB726F3953F00845959 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB626F3953F00845959 /* LoadingView.swift */; };
 		65486CB926F395C900845959 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB826F395C900845959 /* NavigationViews.swift */; };
 		65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBA26F39D8600845959 /* FavouriteView.swift */; };
 		65486CBD26F3FD9100845959 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBC26F3FD9100845959 /* LogoView.swift */; };
-		65486CBF26F3FFDF00845959 /* ShipMetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBE26F3FFDF00845959 /* ShipMetricView.swift */; };
-		65486CC126F4007700845959 /* ShipPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC026F4007700845959 /* ShipPropertyView.swift */; };
+		65486CBF26F3FFDF00845959 /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBE26F3FFDF00845959 /* MetricView.swift */; };
+		65486CC126F4007700845959 /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC026F4007700845959 /* PropertyView.swift */; };
 		65486CC326F403DB00845959 /* string+number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC226F403DB00845959 /* string+number.swift */; };
 		65486CC526F4269D00845959 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC426F4269D00845959 /* Film.swift */; };
 		65486CC726F426C300845959 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC626F426C300845959 /* People.swift */; };
@@ -36,7 +36,7 @@
 		65486CCD26F431F300845959 /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CCC26F431F300845959 /* PilotView.swift */; };
 		65486CCF26F433D800845959 /* FetchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CCE26F433D800845959 /* FetchViewModel.swift */; };
 		65486CD126F4341E00845959 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CD026F4341E00845959 /* PeopleViewModel.swift */; };
-		65751B4A26F63A6000DDA66C /* ShipMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B4926F63A6000DDA66C /* ShipMeasureView.swift */; };
+		65751B4A26F63A6000DDA66C /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B4926F63A6000DDA66C /* MeasureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,12 +78,12 @@
 		65486CB026F3591D00845959 /* ShipDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsView.swift; sourceTree = "<group>"; };
 		65486CB226F37E5D00845959 /* CustomCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCache.swift; sourceTree = "<group>"; };
 		65486CB426F38B8900845959 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
-		65486CB626F3953F00845959 /* ShipsLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsLoadingView.swift; sourceTree = "<group>"; };
+		65486CB626F3953F00845959 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		65486CB826F395C900845959 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
 		65486CBA26F39D8600845959 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		65486CBC26F3FD9100845959 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
-		65486CBE26F3FFDF00845959 /* ShipMetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMetricView.swift; sourceTree = "<group>"; };
-		65486CC026F4007700845959 /* ShipPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPropertyView.swift; sourceTree = "<group>"; };
+		65486CBE26F3FFDF00845959 /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
+		65486CC026F4007700845959 /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
 		65486CC226F403DB00845959 /* string+number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+number.swift"; sourceTree = "<group>"; };
 		65486CC426F4269D00845959 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		65486CC626F426C300845959 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		65486CCC26F431F300845959 /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
 		65486CCE26F433D800845959 /* FetchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchViewModel.swift; sourceTree = "<group>"; };
 		65486CD026F4341E00845959 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
-		65751B4926F63A6000DDA66C /* ShipMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipMeasureView.swift; sourceTree = "<group>"; };
+		65751B4926F63A6000DDA66C /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,15 +199,15 @@
 				65486CAC26F34BE200845959 /* ShipPageView.swift */,
 				65486CAE26F3531E00845959 /* ShipListItemView.swift */,
 				65486CB026F3591D00845959 /* ShipDetailsView.swift */,
-				65486CB626F3953F00845959 /* ShipsLoadingView.swift */,
+				65486CB626F3953F00845959 /* LoadingView.swift */,
 				65486CB826F395C900845959 /* NavigationViews.swift */,
 				65486CBA26F39D8600845959 /* FavouriteView.swift */,
 				65486CBC26F3FD9100845959 /* LogoView.swift */,
-				65486CBE26F3FFDF00845959 /* ShipMetricView.swift */,
-				65486CC026F4007700845959 /* ShipPropertyView.swift */,
+				65486CBE26F3FFDF00845959 /* MetricView.swift */,
+				65486CC026F4007700845959 /* PropertyView.swift */,
 				65486CCA26F427AD00845959 /* FilmView.swift */,
 				65486CCC26F431F300845959 /* PilotView.swift */,
-				65751B4926F63A6000DDA66C /* ShipMeasureView.swift */,
+				65751B4926F63A6000DDA66C /* MeasureView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,8 +372,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65486CAF26F3531E00845959 /* ShipListItemView.swift in Sources */,
-				65486CB726F3953F00845959 /* ShipsLoadingView.swift in Sources */,
-				65486CBF26F3FFDF00845959 /* ShipMetricView.swift in Sources */,
+				65486CB726F3953F00845959 /* LoadingView.swift in Sources */,
+				65486CBF26F3FFDF00845959 /* MetricView.swift in Sources */,
 				65486CD126F4341E00845959 /* PeopleViewModel.swift in Sources */,
 				65486CB326F37E5D00845959 /* CustomCache.swift in Sources */,
 				65486CC726F426C300845959 /* People.swift in Sources */,
@@ -382,13 +382,13 @@
 				65486C7426F334A000845959 /* StarWarsShipsApp.swift in Sources */,
 				65486CAB26F348A200845959 /* ShipListViewModel.swift in Sources */,
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
-				65486CC126F4007700845959 /* ShipPropertyView.swift in Sources */,
+				65486CC126F4007700845959 /* PropertyView.swift in Sources */,
 				65486CC326F403DB00845959 /* string+number.swift in Sources */,
 				65486CCB26F427AD00845959 /* FilmView.swift in Sources */,
 				65486CCF26F433D800845959 /* FetchViewModel.swift in Sources */,
 				65486CA726F33DE500845959 /* Ship.swift in Sources */,
 				65486CB526F38B8900845959 /* Favourites.swift in Sources */,
-				65751B4A26F63A6000DDA66C /* ShipMeasureView.swift in Sources */,
+				65751B4A26F63A6000DDA66C /* MeasureView.swift in Sources */,
 				65486CB926F395C900845959 /* NavigationViews.swift in Sources */,
 				65486CA326F33AE600845959 /* Fetcher.swift in Sources */,
 				65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */,

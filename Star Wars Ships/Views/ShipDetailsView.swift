@@ -12,8 +12,7 @@ struct ShipTitleView: View {
     var body: some View {
             VStack (alignment: .leading, spacing: 15) {
               HStack (alignment: .top) {
-                Text(ship.model).font(.subheadline).bold()
-                
+                Text(ship.model).font(.subheadline).bold() 
                 Spacer()
                 FavouriteView(ship: ship, size: 30)
               }
@@ -36,11 +35,10 @@ struct ShipCapacityView: View {
     var font  = Font.caption
     var body: some View {
         VStack (alignment: .leading, spacing: 15) {
-            ShipPropertyView(label: "Crew", property: ship.crew, font: font)
-            ShipPropertyView(label: "Passengers", property: ship.passengers,font: font)
-            //       ShipMetricView(label: "Capacity", number: ship.cargoCapacity, units: "kg",font: font)
-            ShipMeasureView(label: "Capacity", number: ship.cargoCapacity, units: UnitMass.kilograms,font: font)
-            ShipPropertyView(label: "Consumables", property: ship.consumables, font: font)
+            PropertyView(label: "Crew", property: ship.crew, font: font)
+            PropertyView(label: "Passengers", property: ship.passengers,font: font)
+            MeasureView(label: "Capacity", number: ship.cargoCapacity, units: UnitMass.kilograms,font: font)
+            PropertyView(label: "Consumables", property: ship.consumables, font: font)
         }
     }
 }
@@ -71,12 +69,12 @@ struct ShipInfoView: View {
         VStack (alignment: .leading, spacing: 15) {
             ShipTitleView(ship:ship)
             ShipBuildByView(ship:ship)
-            ShipMetricView(label: "Cost", number: ship.costInCredits, units: "credits", font: font)
-            ShipMeasureView(label: "Length", number: ship.length, units: UnitLength.meters, font: font) 
-            ShipMeasureView(label: "Atm Speed", number: ship.maxAtmospheringSpeed, units: UnitSpeed.kilometersPerHour, font: font)
+            MetricView(label: "Cost", number: ship.costInCredits, units: "credits", font: font)
+            MeasureView(label: "Length", number: ship.length, units: UnitLength.meters, font: font) 
+            MeasureView(label: "Atm Speed", number: ship.maxAtmospheringSpeed, units: UnitSpeed.kilometersPerHour, font: font)
             ShipCapacityView(ship:ship)
             ShipEngineView(ship:ship)
-            ShipPropertyView(label: "Starship Class", property: ship.starshipClass, font: font)
+            PropertyView(label: "Starship Class", property: ship.starshipClass, font: font)
             FilmView(ship: ship)
             PilotView(ship: ship)
         }

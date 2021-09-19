@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShipMeasureView: View {
+struct MeasureView: View {
     var label : String
     var number : String
     var units : Unit
@@ -24,8 +24,8 @@ struct ShipMeasureView: View {
     }
 }
 
-struct ShipMeasureView_Previews: PreviewProvider {
+struct MeasureView_Previews: PreviewProvider {
     static var previews: some View {
-        ShipMeasureView(label:"Length", number: "1,250", units: UnitLength.meters, font: .caption)
+        MeasureView(label:"Length", number: "1,250", units: UnitLength.meters, font: .caption)
     }
 }

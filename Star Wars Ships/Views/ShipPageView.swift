@@ -32,7 +32,7 @@ struct ShipListView: View {
                 List(self.listViewModel.ships, id: \.url) { ship in
                    if ship.name == Ship.Loading.name
                     {
-                    ShipsLoadingView()
+                    LoadingView()
                     }
                    else
                     {

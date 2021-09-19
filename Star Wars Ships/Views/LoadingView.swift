@@ -1,5 +1,5 @@
 //
-//  ShipsLoadingView.swift
+//  LoadingView.swift
 //  Star Wars Ships
 //
 //  Created by Geoff Burns on 16/9/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShipsLoadingView: View {
+struct LoadingView: View {
  
 var body: some View {
   
@@ -18,8 +18,8 @@ var body: some View {
 }
 }
 
-struct ShipsLoadingView_Previews: PreviewProvider {
+struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        ShipsLoadingView()
+        LoadingView()
     }
 }

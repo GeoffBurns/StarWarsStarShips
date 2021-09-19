@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShipMetricView: View {
+struct MetricView: View {
     var label : String
     var number : String
     var units : String
@@ -25,8 +25,8 @@ struct ShipMetricView: View {
 }
 
 
-struct ShipMetricView_Previews: PreviewProvider {
+struct MetricView_Previews: PreviewProvider {
     static var previews: some View {
-        ShipMetricView(label: "Width", number: "50", units: "cm", font: .caption).padding()
+        MetricView(label: "Width", number: "50", units: "cm", font: .caption).padding()
     }
 }

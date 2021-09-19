@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShipPropertyView: View {
+struct PropertyView: View {
     var label : String
     var property : String
     var font : Font
@@ -20,8 +20,8 @@ struct ShipPropertyView: View {
     }
 }
 
-struct ShipPropertyView_Previews: PreviewProvider {
+struct PropertyView_Previews: PreviewProvider {
     static var previews: some View {
-        ShipPropertyView(label: "Name", property: "John", font: .caption)
+        PropertyView(label: "Name", property: "John", font: .caption)
     }
 }

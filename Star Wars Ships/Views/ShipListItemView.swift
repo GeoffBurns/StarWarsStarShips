@@ -15,7 +15,7 @@ struct ShipListItemView: View {
         {
             Text(ship.name).bold()
             ShipBuildByView(ship: ship, font: .footnote)
-            ShipMeasureView(label: "Length", number: ship.length, units: UnitLength.meters, font:.footnote)
+            MeasureView(label: "Length", number: ship.length, units: UnitLength.meters, font:.footnote)
         }
     }
 }
