@@ -11,7 +11,7 @@ import Combine
 import SwiftUI
 
 class FetchViewModel: ObservableObject {
-    var fetcher: Fetcher = Fetcher.shared
+    var fetcher: JsonFetcher = JsonFetcher.shared
     
     var cancellables = Set<AnyCancellable>()
     func fetchData<T: Decodable>(url : String ) -> AnyPublisher<T, FetchError> {

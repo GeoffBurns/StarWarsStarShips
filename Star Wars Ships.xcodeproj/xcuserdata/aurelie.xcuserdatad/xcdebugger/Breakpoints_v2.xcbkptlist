@@ -14,8 +14,8 @@
             filePath = "Star Wars Ships/Network/Fetcher.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "fetch(from:)"
             landmarkType = "7">
          </BreakpointContent>

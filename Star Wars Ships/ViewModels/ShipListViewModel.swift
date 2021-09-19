@@ -12,7 +12,7 @@ import SwiftUI
 
     
 class ShipListViewModel: ObservableObject  {
-    var fetcher: Fetcher = Fetcher()
+    var fetcher: JsonFetcher = JsonFetcher()
     static var urlOfFirstPage = "https://swapi.dev/api/starships"
     @Published var ships = [Ship.Loading]
     @Published var count = 0

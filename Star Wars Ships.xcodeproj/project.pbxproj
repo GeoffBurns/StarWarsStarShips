@@ -12,7 +12,7 @@
 		65486C7B26F334A300845959 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65486C7A26F334A300845959 /* Preview Assets.xcassets */; };
 		65486C8626F334A300845959 /* Star_Wars_ShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486C8526F334A300845959 /* Star_Wars_ShipsTests.swift */; };
 		65486C9126F334A300845959 /* Star_Wars_ShipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486C9026F334A300845959 /* Star_Wars_ShipsUITests.swift */; };
-		65486CA326F33AE600845959 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA226F33AE600845959 /* Fetcher.swift */; };
+		65486CA326F33AE600845959 /* JsonFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA226F33AE600845959 /* JsonFetcher.swift */; };
 		65486CA526F33BA500845959 /* FetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA426F33BA500845959 /* FetchError.swift */; };
 		65486CA726F33DE500845959 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA626F33DE500845959 /* Ship.swift */; };
 		65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA826F33F5F00845959 /* ShipResponse.swift */; };
@@ -68,7 +68,7 @@
 		65486C8C26F334A300845959 /* Star Wars ShipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star Wars ShipsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65486C9026F334A300845959 /* Star_Wars_ShipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_Wars_ShipsUITests.swift; sourceTree = "<group>"; };
 		65486C9226F334A300845959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65486CA226F33AE600845959 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		65486CA226F33AE600845959 /* JsonFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFetcher.swift; sourceTree = "<group>"; };
 		65486CA426F33BA500845959 /* FetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchError.swift; sourceTree = "<group>"; };
 		65486CA626F33DE500845959 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		65486CA826F33F5F00845959 /* ShipResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipResponse.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		65486CA126F33AAC00845959 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				65486CA226F33AE600845959 /* Fetcher.swift */,
+				65486CA226F33AE600845959 /* JsonFetcher.swift */,
 				65486CA426F33BA500845959 /* FetchError.swift */,
 				65486CB226F37E5D00845959 /* CustomCache.swift */,
 			);
@@ -390,7 +390,7 @@
 				65486CB526F38B8900845959 /* Favourites.swift in Sources */,
 				65751B4A26F63A6000DDA66C /* MeasureView.swift in Sources */,
 				65486CB926F395C900845959 /* NavigationViews.swift in Sources */,
-				65486CA326F33AE600845959 /* Fetcher.swift in Sources */,
+				65486CA326F33AE600845959 /* JsonFetcher.swift in Sources */,
 				65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */,
 				65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */,
 				65486CA526F33BA500845959 /* FetchError.swift in Sources */,
