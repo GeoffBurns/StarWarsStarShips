@@ -24,8 +24,9 @@ struct ShipMetricView: View {
     }
 }
 
+
 struct ShipMetricView_Previews: PreviewProvider {
     static var previews: some View {
-        ShipMetricView(label: "Width", number: "50", units: "cm", font: .caption)
+        ShipMetricView(label: "Width", number: "50", units: "cm", font: .caption).padding()
     }
 }

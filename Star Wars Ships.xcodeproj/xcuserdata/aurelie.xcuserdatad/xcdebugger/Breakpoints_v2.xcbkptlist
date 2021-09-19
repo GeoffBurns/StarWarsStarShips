@@ -94,9 +94,9 @@
             filePath = "Star Wars Ships/Views/ShipDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "body"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "font"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
@@ -110,8 +110,8 @@
             filePath = "Star Wars Ships/Views/ShipDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4BC5AAD3-26DA-400C-A06D-625F201B151C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Star Wars Ships/Views/ShipsLoadingView.swift"
@@ -174,8 +174,8 @@
             filePath = "Star Wars Ships/Views/ShipDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "ShipDetailsView"
             landmarkType = "14">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "Star Wars Ships/Views/ShipDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "ShipDetailsView"
             landmarkType = "14">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "Star Wars Ships/Views/ShipDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "Star Wars Ships/Views/ShipDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>

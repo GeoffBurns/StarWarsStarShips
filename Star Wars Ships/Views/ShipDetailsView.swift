@@ -38,7 +38,8 @@ struct ShipCapacityView: View {
         VStack (alignment: .leading, spacing: 15) {
             ShipPropertyView(label: "Crew", property: ship.crew, font: font)
             ShipPropertyView(label: "Passengers", property: ship.passengers,font: font)
-            ShipMetricView(label: "Capacity", number: ship.cargoCapacity, units: "kg",font: font)
+            //       ShipMetricView(label: "Capacity", number: ship.cargoCapacity, units: "kg",font: font)
+            ShipMeasureView(label: "Capacity", number: ship.cargoCapacity, units: UnitMass.kilograms,font: font)
             ShipPropertyView(label: "Consumables", property: ship.consumables, font: font)
         }
     }
@@ -71,8 +72,8 @@ struct ShipInfoView: View {
             ShipTitleView(ship:ship)
             ShipBuildByView(ship:ship)
             ShipMetricView(label: "Cost", number: ship.costInCredits, units: "credits", font: font)
-            ShipMetricView(label: "Length", number: ship.length, units: "m", font: font)
-            ShipMetricView(label: "Atm Speed", number: ship.maxAtmospheringSpeed, units: "kph", font: font)
+            ShipMeasureView(label: "Length", number: ship.length, units: UnitLength.meters, font: font) 
+            ShipMeasureView(label: "Atm Speed", number: ship.maxAtmospheringSpeed, units: UnitSpeed.kilometersPerHour, font: font)
             ShipCapacityView(ship:ship)
             ShipEngineView(ship:ship)
             ShipPropertyView(label: "Starship Class", property: ship.starshipClass, font: font)
