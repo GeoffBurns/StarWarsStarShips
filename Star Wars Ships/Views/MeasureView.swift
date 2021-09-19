@@ -1,5 +1,5 @@
 //
-//  ShipMeasureView.swift
+//  MeasureView.swift
 //  Star Wars Ships
 //
 //  Created by Geoff Burns on 19/9/21.

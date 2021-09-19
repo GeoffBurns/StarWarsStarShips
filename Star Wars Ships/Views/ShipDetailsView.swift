@@ -93,6 +93,8 @@ struct ShipDetailsView: View {
             VStack (alignment: .leading, spacing: 15) {
                 ShipInfoView(ship: ship)
                 Spacer()
+                DatePropertyView(label: "Created", property: ship.created, font: font)
+                DatePropertyView(label: "Edited", property: ship.edited, font: font)
             }
         }
         .padding(10)

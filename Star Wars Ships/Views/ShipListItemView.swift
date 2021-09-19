@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShipListItemView: View {
+struct ShipSummaryView: View {
     var ship : Ship
     
     var body: some View {
@@ -16,6 +16,40 @@ struct ShipListItemView: View {
             Text(ship.name).bold()
             ShipBuildByView(ship: ship, font: .footnote)
             MeasureView(label: "Length", number: ship.length, units: UnitLength.meters, font:.footnote)
+        }
+    }
+}
+struct LoadedShipListItem: View {
+    var ship : Ship
+    
+    var body: some View {
+          HStack (alignment: .top) {
+            NavigationLink(
+                destination: ShipDetailsView(ship: ship))
+                {
+                ShipSummaryView(ship: ship)
+                        .foregroundColor(.primary)
+                 }
+            VStack  (alignment: .center, spacing: 15){
+              FavouriteView(ship: ship, size: 15)
+              Image(systemName: "chevron.right")
+                .font(.system(size: 15))
+                .foregroundColor(.gray)
+            }
+          }
+    }
+}
+struct ShipListItemView: View {
+    var ship : Ship
+    
+    var body: some View {
+        if ( ship.name == Ship.Loading.name)
+        {
+            LoadingView()
+        }
+        else
+        {
+            LoadedShipListItem(ship: ship)
         }
     }
 }

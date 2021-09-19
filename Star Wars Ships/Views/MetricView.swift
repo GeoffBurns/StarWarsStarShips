@@ -1,5 +1,5 @@
 //
-//  ShipMetricView.swift
+//  MetricView.swift
 //  Star Wars Ships
 //
 //  Created by Geoff Burns on 17/9/21.

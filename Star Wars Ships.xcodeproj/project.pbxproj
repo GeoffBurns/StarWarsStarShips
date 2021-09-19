@@ -16,14 +16,11 @@
 		65486CA526F33BA500845959 /* FetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA426F33BA500845959 /* FetchError.swift */; };
 		65486CA726F33DE500845959 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA626F33DE500845959 /* Ship.swift */; };
 		65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CA826F33F5F00845959 /* ShipResponse.swift */; };
-		65486CAB26F348A200845959 /* ShipListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CAA26F348A200845959 /* ShipListViewModel.swift */; };
-		65486CAD26F34BE200845959 /* ShipPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CAC26F34BE200845959 /* ShipPageView.swift */; };
 		65486CAF26F3531E00845959 /* ShipListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CAE26F3531E00845959 /* ShipListItemView.swift */; };
 		65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB026F3591D00845959 /* ShipDetailsView.swift */; };
 		65486CB326F37E5D00845959 /* CustomCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB226F37E5D00845959 /* CustomCache.swift */; };
 		65486CB526F38B8900845959 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB426F38B8900845959 /* Favourites.swift */; };
 		65486CB726F3953F00845959 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB626F3953F00845959 /* LoadingView.swift */; };
-		65486CB926F395C900845959 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CB826F395C900845959 /* NavigationViews.swift */; };
 		65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBA26F39D8600845959 /* FavouriteView.swift */; };
 		65486CBD26F3FD9100845959 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBC26F3FD9100845959 /* LogoView.swift */; };
 		65486CBF26F3FFDF00845959 /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBE26F3FFDF00845959 /* MetricView.swift */; };
@@ -37,6 +34,11 @@
 		65486CCF26F433D800845959 /* FetchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CCE26F433D800845959 /* FetchViewModel.swift */; };
 		65486CD126F4341E00845959 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CD026F4341E00845959 /* PeopleViewModel.swift */; };
 		65751B4A26F63A6000DDA66C /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B4926F63A6000DDA66C /* MeasureView.swift */; };
+		65751B5826F7600F00DDA66C /* EndlessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5726F7600F00DDA66C /* EndlessDataSource.swift */; };
+		65751B5A26F7689A00DDA66C /* undefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5926F7689900DDA66C /* undefined.swift */; };
+		65751B5C26F773A300DDA66C /* EndlessShips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5B26F773A300DDA66C /* EndlessShips.swift */; };
+		65751B5E26F7754D00DDA66C /* EndlessShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5D26F7754D00DDA66C /* EndlessShipView.swift */; };
+		65751B6026F79D5600DDA66C /* DatePropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5F26F79D5600DDA66C /* DatePropertyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,14 +74,11 @@
 		65486CA426F33BA500845959 /* FetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchError.swift; sourceTree = "<group>"; };
 		65486CA626F33DE500845959 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		65486CA826F33F5F00845959 /* ShipResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipResponse.swift; sourceTree = "<group>"; };
-		65486CAA26F348A200845959 /* ShipListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipListViewModel.swift; sourceTree = "<group>"; };
-		65486CAC26F34BE200845959 /* ShipPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPageView.swift; sourceTree = "<group>"; };
 		65486CAE26F3531E00845959 /* ShipListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipListItemView.swift; sourceTree = "<group>"; };
 		65486CB026F3591D00845959 /* ShipDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailsView.swift; sourceTree = "<group>"; };
 		65486CB226F37E5D00845959 /* CustomCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCache.swift; sourceTree = "<group>"; };
 		65486CB426F38B8900845959 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
 		65486CB626F3953F00845959 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		65486CB826F395C900845959 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
 		65486CBA26F39D8600845959 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		65486CBC26F3FD9100845959 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		65486CBE26F3FFDF00845959 /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
@@ -93,6 +92,11 @@
 		65486CCE26F433D800845959 /* FetchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchViewModel.swift; sourceTree = "<group>"; };
 		65486CD026F4341E00845959 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		65751B4926F63A6000DDA66C /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		65751B5726F7600F00DDA66C /* EndlessDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EndlessDataSource.swift; path = ../../../../../EndlessDataSource.swift; sourceTree = "<group>"; };
+		65751B5926F7689900DDA66C /* undefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = undefined.swift; path = ../../../../xcode/GitHub/StarWarsShips/GeoffsUtils/Sources/GeoffsUtils/Extensions/undefined.swift; sourceTree = "<group>"; };
+		65751B5B26F773A300DDA66C /* EndlessShips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessShips.swift; sourceTree = "<group>"; };
+		65751B5D26F7754D00DDA66C /* EndlessShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EndlessShipView.swift; path = ../../../../../EndlessShipView.swift; sourceTree = "<group>"; };
+		65751B5F26F79D5600DDA66C /* DatePropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePropertyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,11 +200,9 @@
 		65486C9F26F334C600845959 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				65486CAC26F34BE200845959 /* ShipPageView.swift */,
 				65486CAE26F3531E00845959 /* ShipListItemView.swift */,
 				65486CB026F3591D00845959 /* ShipDetailsView.swift */,
 				65486CB626F3953F00845959 /* LoadingView.swift */,
-				65486CB826F395C900845959 /* NavigationViews.swift */,
 				65486CBA26F39D8600845959 /* FavouriteView.swift */,
 				65486CBC26F3FD9100845959 /* LogoView.swift */,
 				65486CBE26F3FFDF00845959 /* MetricView.swift */,
@@ -208,6 +210,8 @@
 				65486CCA26F427AD00845959 /* FilmView.swift */,
 				65486CCC26F431F300845959 /* PilotView.swift */,
 				65751B4926F63A6000DDA66C /* MeasureView.swift */,
+				65751B5D26F7754D00DDA66C /* EndlessShipView.swift */,
+				65751B5F26F79D5600DDA66C /* DatePropertyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,11 +219,12 @@
 		65486CA026F334D400845959 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				65486CAA26F348A200845959 /* ShipListViewModel.swift */,
 				65486CB426F38B8900845959 /* Favourites.swift */,
 				65486CC826F4276600845959 /* FilmViewModel.swift */,
 				65486CCE26F433D800845959 /* FetchViewModel.swift */,
 				65486CD026F4341E00845959 /* PeopleViewModel.swift */,
+				65751B5726F7600F00DDA66C /* EndlessDataSource.swift */,
+				65751B5B26F773A300DDA66C /* EndlessShips.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 		65486CD226F4397300845959 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				65751B5926F7689900DDA66C /* undefined.swift */,
 				65486CC226F403DB00845959 /* string+number.swift */,
 			);
 			path = Extensions;
@@ -371,16 +377,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65751B5826F7600F00DDA66C /* EndlessDataSource.swift in Sources */,
 				65486CAF26F3531E00845959 /* ShipListItemView.swift in Sources */,
+				65751B5C26F773A300DDA66C /* EndlessShips.swift in Sources */,
+				65751B6026F79D5600DDA66C /* DatePropertyView.swift in Sources */,
 				65486CB726F3953F00845959 /* LoadingView.swift in Sources */,
 				65486CBF26F3FFDF00845959 /* MetricView.swift in Sources */,
+				65751B5A26F7689A00DDA66C /* undefined.swift in Sources */,
 				65486CD126F4341E00845959 /* PeopleViewModel.swift in Sources */,
 				65486CB326F37E5D00845959 /* CustomCache.swift in Sources */,
 				65486CC726F426C300845959 /* People.swift in Sources */,
-				65486CAD26F34BE200845959 /* ShipPageView.swift in Sources */,
 				65486CC926F4276600845959 /* FilmViewModel.swift in Sources */,
 				65486C7426F334A000845959 /* StarWarsShipsApp.swift in Sources */,
-				65486CAB26F348A200845959 /* ShipListViewModel.swift in Sources */,
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
 				65486CC126F4007700845959 /* PropertyView.swift in Sources */,
 				65486CC326F403DB00845959 /* string+number.swift in Sources */,
@@ -389,7 +397,7 @@
 				65486CA726F33DE500845959 /* Ship.swift in Sources */,
 				65486CB526F38B8900845959 /* Favourites.swift in Sources */,
 				65751B4A26F63A6000DDA66C /* MeasureView.swift in Sources */,
-				65486CB926F395C900845959 /* NavigationViews.swift in Sources */,
+				65751B5E26F7754D00DDA66C /* EndlessShipView.swift in Sources */,
 				65486CA326F33AE600845959 /* JsonFetcher.swift in Sources */,
 				65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */,
 				65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */,

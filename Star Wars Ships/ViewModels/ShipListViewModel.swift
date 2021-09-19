@@ -4,8 +4,7 @@
 //
 //  Created by Geoff Burns on 16/9/21.
 //
-
-import Foundation
+ 
 import Combine
 import SwiftUI
  
@@ -21,8 +20,7 @@ class ShipListViewModel: ObservableObject  {
     
     var cancellables = Set<AnyCancellable>()
     func fetchShipsData(url : String ) -> AnyPublisher<ShipResponse, FetchError> {
-        return fetcher.fetch(from: url)
-            .eraseToAnyPublisher()
+        return fetcher.fetch(from: url) 
     }
 
     func getFirstShips()

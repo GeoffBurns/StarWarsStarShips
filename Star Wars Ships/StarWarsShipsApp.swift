@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct StarWarsShipsApp: App {
-    @StateObject var shipList = ShipListViewModel()
+    @StateObject var dataSource = EndlessShips()
     @StateObject var favourites = Favourites()
     var body: some Scene {
         WindowGroup {
-            ShipPageView()
-                .environmentObject(shipList)
+           EndlessShipView() 
+                .environmentObject(dataSource)
                 .environmentObject(favourites)
         }
     }

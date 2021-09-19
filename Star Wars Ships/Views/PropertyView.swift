@@ -1,5 +1,5 @@
 //
-//  ShipPropertyView.swift
+//  PropertyView.swift
 //  Star Wars Ships
 //
 //  Created by Geoff Burns on 17/9/21.

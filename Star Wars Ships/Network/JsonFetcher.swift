@@ -20,11 +20,10 @@ struct JsonFetcher {
         return Just(data)
             .decode(type: T.self, decoder: decoder)
             .mapError {error in .jsonError(error.localizedDescription)}
-            .map { data in
+            .handleEvents(receiveOutput: {   data in
                 //  cache data
                 JsonFetcher.cache.insert(data, forKey: url)
-                return data
-            }
+            })
             .eraseToAnyPublisher()
     }
     
