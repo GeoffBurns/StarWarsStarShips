@@ -13,7 +13,7 @@ struct MetricView: View {
     var units : String
     var font : Font
     var body: some View {
-        let value = number.isNumber
+        let value = number.isNumberWithCommas
                 ? number + " " + units
                 : number
         HStack (alignment: .top) {

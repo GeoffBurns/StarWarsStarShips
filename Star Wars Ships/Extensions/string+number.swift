@@ -10,7 +10,11 @@ import Foundation
 extension String  {
     var isNumber: Bool {
         return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits
-                                                .union(CharacterSet.punctuationCharacters)
+                                                .inverted) == nil
+    }
+    var isNumberWithCommas: Bool {
+        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits
+                                                .union(CharacterSet(charactersIn:","))
                                                 .inverted) == nil
     }
     func measure(unit:Unit) -> String {
