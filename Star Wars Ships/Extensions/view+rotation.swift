@@ -4,11 +4,12 @@
 //
 //  Created by Pual Hudson 3/9/2021
 // https://www.hackingwithswift.com/quick-start/swiftui/how-to-detect-device-rotation
-//
+// 
+#if os(macOS)
+#else
 
 import Foundation
 import SwiftUI
- 
 
 struct DeviceRotationViewModifier: ViewModifier {
     let action: (UIDeviceOrientation) -> Void
@@ -22,10 +23,9 @@ struct DeviceRotationViewModifier: ViewModifier {
     }
 }
  
- 
 extension View {
     func onRotate(perform action: @escaping (UIDeviceOrientation) -> Void) -> some View {
         self.modifier(DeviceRotationViewModifier(action: action))
-    } 
+    }
 }
-
+#endif
