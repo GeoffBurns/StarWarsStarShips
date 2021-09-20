@@ -14,6 +14,8 @@ struct JsonFetcher {
     static let cache = CustomCache<String, Decodable>()
     static let shared = JsonFetcher()
     
+    var isCaching = true
+    
     fileprivate func HttpSuccess<T>(_ data: Data, url: String) -> AnyPublisher<T, Publishers.Map<Publishers.MapError<Publishers.Decode<Just<JSONDecoder.Input>, T, JSONDecoder>, FetchError>, T>.Failure> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -21,8 +23,11 @@ struct JsonFetcher {
             .decode(type: T.self, decoder: decoder)
             .mapError {error in .jsonError(error.localizedDescription)}
             .handleEvents(receiveOutput: {   data in
+                if self.isCaching
+                {
                 //  cache data
                 JsonFetcher.cache.insert(data, forKey: url)
+                }
             })
             .eraseToAnyPublisher()
     }
@@ -40,11 +45,13 @@ struct JsonFetcher {
     
     func fetch<T>(from url: String) -> AnyPublisher<T, FetchError> where T: Decodable {
   
-        // check cache for data
-        if let cachedValue = cachedValue(for: url) as? T
-        {
+        if isCaching {
+          // check cache for data
+          if let cachedValue = cachedValue(for: url) as? T
+          {
             // return data from cache
             return JustAny(cachedValue)
+          }
         }
         // fetch data if not in cache
         return URLSession.shared

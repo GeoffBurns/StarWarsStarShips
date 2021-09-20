@@ -84,18 +84,24 @@ struct ShipDetailsView: View {
     var ship : Ship
     var font  = Font.caption
     var body: some View {
-        ZStack
-        {
+        GeometryReader { geometry in
+         ScrollView
+          {
+             
+           ZStack {
             VStack (alignment: .leading, spacing: 15) {
                 Spacer()
                 LogosView()
-            }
+            }.frame( height: geometry.size.height)
             VStack (alignment: .leading, spacing: 15) {
                 ShipInfoView(ship: ship)
                 Spacer()
                 DatePropertyView(label: "Created", property: ship.created, font: font)
+                 
                 DatePropertyView(label: "Edited", property: ship.edited, font: font)
-            }
+                }
+           }
+         }
         }
         .padding(10)
     .navigationTitle(ship.name)

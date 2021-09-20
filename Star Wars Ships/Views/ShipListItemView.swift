@@ -24,12 +24,14 @@ struct LoadedShipListItem: View {
     
     var body: some View {
           HStack (alignment: .top) {
-            NavigationLink(
-                destination: ShipDetailsView(ship: ship))
-                {
-                ShipSummaryView(ship: ship)
-                        .foregroundColor(.primary)
-                 }
+            ZStack {
+                  ShipSummaryView(ship: ship)
+                  NavigationLink(
+                    destination: ShipDetailsView(ship: ship))
+                    {
+                    EmptyView()
+                    } .buttonStyle(PlainButtonStyle())
+                  }
             VStack  (alignment: .center, spacing: 15){
               FavouriteView(ship: ship, size: 15)
               Image(systemName: "chevron.right")

@@ -14,6 +14,7 @@ class FetchViewModel: ObservableObject {
     var fetcher: JsonFetcher = JsonFetcher.shared
     
     var cancellables = Set<AnyCancellable>()
+    
     func fetchData<T: Decodable>(url : String ) -> AnyPublisher<T, FetchError> {
         return fetcher.fetch(from: url)
             .eraseToAnyPublisher()

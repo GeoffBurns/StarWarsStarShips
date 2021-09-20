@@ -10,11 +10,10 @@ import Combine
 
  
 class EndlessShips : EndlessDataSource<Ship, ShipResponse> {
- 
-     
+  
     static var urlOfFirstPage = "https://swapi.dev/api/starships"
     
-    override func getItems(response :ShipResponse ) -> [Ship]
+    override func getItems( response :ShipResponse ) -> [Ship]
     {
         return response.results
     }
@@ -25,6 +24,7 @@ class EndlessShips : EndlessDataSource<Ship, ShipResponse> {
     override init()
     {
         super.init()
+        self.fetcher.isCaching = false
         self.items = [Ship.Loading]
         self.urlOfNextPage = "https://swapi.dev/api/starships"
         loadMoreContent()
