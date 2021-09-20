@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,7 +25,6 @@
 		65486CBD26F3FD9100845959 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBC26F3FD9100845959 /* LogoView.swift */; };
 		65486CBF26F3FFDF00845959 /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CBE26F3FFDF00845959 /* MetricView.swift */; };
 		65486CC126F4007700845959 /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC026F4007700845959 /* PropertyView.swift */; };
-		65486CC326F403DB00845959 /* string+number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC226F403DB00845959 /* string+number.swift */; };
 		65486CC526F4269D00845959 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC426F4269D00845959 /* Film.swift */; };
 		65486CC726F426C300845959 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC626F426C300845959 /* People.swift */; };
 		65486CC926F4276600845959 /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65486CC826F4276600845959 /* FilmViewModel.swift */; };
@@ -38,9 +37,7 @@
 		65751B5C26F773A300DDA66C /* EndlessShips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5B26F773A300DDA66C /* EndlessShips.swift */; };
 		65751B5E26F7754D00DDA66C /* EndlessShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5D26F7754D00DDA66C /* EndlessShipView.swift */; };
 		65751B6026F79D5600DDA66C /* DatePropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5F26F79D5600DDA66C /* DatePropertyView.swift */; };
-		6597F0E226F8AB84008EFD09 /* view+rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597F0E126F8AB84008EFD09 /* view+rotation.swift */; };
-		6597F0E426F8C058008EFD09 /* view+splitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597F0E326F8C058008EFD09 /* view+splitView.swift */; };
-		6597F0E626F8C299008EFD09 /* undefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597F0E526F8C299008EFD09 /* undefined.swift */; };
+		6597F0EE26F8DABB008EFD09 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 6597F0ED26F8DABB008EFD09 /* Utilities */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +82,6 @@
 		65486CBC26F3FD9100845959 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		65486CBE26F3FFDF00845959 /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
 		65486CC026F4007700845959 /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
-		65486CC226F403DB00845959 /* string+number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+number.swift"; sourceTree = "<group>"; };
 		65486CC426F4269D00845959 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		65486CC626F426C300845959 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		65486CC826F4276600845959 /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
@@ -98,9 +94,7 @@
 		65751B5B26F773A300DDA66C /* EndlessShips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessShips.swift; sourceTree = "<group>"; };
 		65751B5D26F7754D00DDA66C /* EndlessShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EndlessShipView.swift; path = ../../../../../EndlessShipView.swift; sourceTree = "<group>"; };
 		65751B5F26F79D5600DDA66C /* DatePropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePropertyView.swift; sourceTree = "<group>"; };
-		6597F0E126F8AB84008EFD09 /* view+rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "view+rotation.swift"; sourceTree = "<group>"; };
-		6597F0E326F8C058008EFD09 /* view+splitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "view+splitView.swift"; sourceTree = "<group>"; };
-		6597F0E526F8C299008EFD09 /* undefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = undefined.swift; sourceTree = "<group>"; };
+		6597F0EF26F8DE50008EFD09 /* Star Wars Ships.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Star Wars Ships.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6597F0EE26F8DABB008EFD09 /* Utilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +130,7 @@
 				65486C8426F334A300845959 /* Star Wars ShipsTests */,
 				65486C8F26F334A300845959 /* Star Wars ShipsUITests */,
 				65486C7126F334A000845959 /* Products */,
+				6597F0EA26F8DA61008EFD09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,7 +147,7 @@
 		65486C7226F334A000845959 /* Star Wars Ships */ = {
 			isa = PBXGroup;
 			children = (
-				65486CD226F4397300845959 /* Extensions */,
+				6597F0EF26F8DE50008EFD09 /* Star Wars Ships.entitlements */,
 				65486CA126F33AAC00845959 /* Network */,
 				65486CA026F334D400845959 /* ViewModels */,
 				65486C9F26F334C600845959 /* Views */,
@@ -243,15 +239,11 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		65486CD226F4397300845959 /* Extensions */ = {
+		6597F0EA26F8DA61008EFD09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6597F0E526F8C299008EFD09 /* undefined.swift */,
-				65486CC226F403DB00845959 /* string+number.swift */,
-				6597F0E126F8AB84008EFD09 /* view+rotation.swift */,
-				6597F0E326F8C058008EFD09 /* view+splitView.swift */,
 			);
-			path = Extensions;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +262,9 @@
 			dependencies = (
 			);
 			name = "Star Wars Ships";
+			packageProductDependencies = (
+				6597F0ED26F8DABB008EFD09 /* Utilities */,
+			);
 			productName = "Star Wars Ships";
 			productReference = 65486C7026F334A000845959 /* Star Wars Ships.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +336,9 @@
 				Base,
 			);
 			mainGroup = 65486C6726F334A000845959;
+			packageReferences = (
+				6597F0E726F8D814008EFD09 /* XCRemoteSwiftPackageReference "Utilities" */,
+			);
 			productRefGroup = 65486C7126F334A000845959 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,7 +383,6 @@
 			files = (
 				65751B5826F7600F00DDA66C /* EndlessDataSource.swift in Sources */,
 				65486CAF26F3531E00845959 /* ShipListItemView.swift in Sources */,
-				6597F0E426F8C058008EFD09 /* view+splitView.swift in Sources */,
 				65751B5C26F773A300DDA66C /* EndlessShips.swift in Sources */,
 				65751B6026F79D5600DDA66C /* DatePropertyView.swift in Sources */,
 				65486CB726F3953F00845959 /* LoadingView.swift in Sources */,
@@ -397,7 +394,6 @@
 				65486C7426F334A000845959 /* StarWarsShipsApp.swift in Sources */,
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
 				65486CC126F4007700845959 /* PropertyView.swift in Sources */,
-				65486CC326F403DB00845959 /* string+number.swift in Sources */,
 				65486CCB26F427AD00845959 /* FilmView.swift in Sources */,
 				65486CCF26F433D800845959 /* FetchViewModel.swift in Sources */,
 				65486CA726F33DE500845959 /* Ship.swift in Sources */,
@@ -408,8 +404,6 @@
 				65486CB126F3591D00845959 /* ShipDetailsView.swift in Sources */,
 				65486CBB26F39D8600845959 /* FavouriteView.swift in Sources */,
 				65486CA526F33BA500845959 /* FetchError.swift in Sources */,
-				6597F0E226F8AB84008EFD09 /* view+rotation.swift in Sources */,
-				6597F0E626F8C299008EFD09 /* undefined.swift in Sources */,
 				65486CCD26F431F300845959 /* PilotView.swift in Sources */,
 				65486CC526F4269D00845959 /* Film.swift in Sources */,
 				65486CBD26F3FD9100845959 /* LogoView.swift in Sources */,
@@ -569,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Star Wars Ships/Star Wars Ships.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Star Wars Ships/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CUBLSA9G4;
@@ -581,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geoffburns.Star-Wars-Ships";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -591,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Star Wars Ships/Star Wars Ships.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Star Wars Ships/Preview Content\"";
 				DEVELOPMENT_TEAM = 5CUBLSA9G4;
@@ -603,6 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geoffburns.Star-Wars-Ships";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -732,6 +730,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6597F0E726F8D814008EFD09 /* XCRemoteSwiftPackageReference "Utilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GeoffBurns/Utilities";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6597F0ED26F8DABB008EFD09 /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6597F0E726F8D814008EFD09 /* XCRemoteSwiftPackageReference "Utilities" */;
+			productName = Utilities;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65486C6826F334A000845959 /* Project object */;
 }

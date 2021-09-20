@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Utilities
 
 struct MeasureView: View {
     var label : String

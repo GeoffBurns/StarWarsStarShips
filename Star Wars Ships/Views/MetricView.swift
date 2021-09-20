@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Utilities
 
 struct MetricView: View {
     var label : String
