@@ -126,11 +126,11 @@
 		65486C6726F334A000845959 = {
 			isa = PBXGroup;
 			children = (
+				6597F0EA26F8DA61008EFD09 /* Frameworks */,
+				65486C7126F334A000845959 /* Products */,
 				65486C7226F334A000845959 /* Star Wars Ships */,
 				65486C8426F334A300845959 /* Star Wars ShipsTests */,
 				65486C8F26F334A300845959 /* Star Wars ShipsUITests */,
-				65486C7126F334A000845959 /* Products */,
-				6597F0EA26F8DA61008EFD09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,11 +219,12 @@
 		65486CA026F334D400845959 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6597F0FA26FAC287008EFD09 /* EndlessDataSource.swift */,
+				65751B5B26F773A300DDA66C /* EndlessShips.swift */,
 				65486CB426F38B8900845959 /* Favourites.swift */,
 				65486CC826F4276600845959 /* FilmViewModel.swift */,
 				65486CCE26F433D800845959 /* FetchViewModel.swift */,
 				65486CD026F4341E00845959 /* PeopleViewModel.swift */,
-				65751B5B26F773A300DDA66C /* EndlessShips.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -231,7 +232,6 @@
 		65486CA126F33AAC00845959 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				6597F0FA26FAC287008EFD09 /* EndlessDataSource.swift */,
 				65486CA226F33AE600845959 /* JsonFetcher.swift */,
 				65486CA426F33BA500845959 /* FetchError.swift */,
 				65486CB226F37E5D00845959 /* CustomCache.swift */,
