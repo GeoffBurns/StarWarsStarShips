@@ -38,6 +38,8 @@
 		65751B6026F79D5600DDA66C /* DatePropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65751B5F26F79D5600DDA66C /* DatePropertyView.swift */; };
 		6597F0EE26F8DABB008EFD09 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 6597F0ED26F8DABB008EFD09 /* Utilities */; };
 		6597F0FB26FAC287008EFD09 /* EndlessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597F0FA26FAC287008EFD09 /* EndlessDataSource.swift */; };
+		6597F0FF26FB0F2B008EFD09 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6597F0FD26FB0F2B008EFD09 /* Main.xcdatamodeld */; };
+		6597F10126FB0FA7008EFD09 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597F10026FB0FA7008EFD09 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		65751B5F26F79D5600DDA66C /* DatePropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePropertyView.swift; sourceTree = "<group>"; };
 		6597F0EF26F8DE50008EFD09 /* Star Wars Ships.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Star Wars Ships.entitlements"; sourceTree = "<group>"; };
 		6597F0FA26FAC287008EFD09 /* EndlessDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessDataSource.swift; sourceTree = "<group>"; };
+		6597F0FE26FB0F2B008EFD09 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		6597F10026FB0FA7008EFD09 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,15 +151,16 @@
 		65486C7226F334A000845959 /* Star Wars Ships */ = {
 			isa = PBXGroup;
 			children = (
-				6597F0EF26F8DE50008EFD09 /* Star Wars Ships.entitlements */,
-				65486CA126F33AAC00845959 /* Network */,
-				65486CA026F334D400845959 /* ViewModels */,
-				65486C9F26F334C600845959 /* Views */,
-				65486C9E26F334B800845959 /* Models */,
-				65486C7326F334A000845959 /* StarWarsShipsApp.swift */,
+				6597F10226FB1273008EFD09 /* App */,
 				65486C7726F334A300845959 /* Assets.xcassets */,
 				65486C7C26F334A300845959 /* Info.plist */,
+				65486C9E26F334B800845959 /* Models */,
+				65486CA126F33AAC00845959 /* Network */,
+				6597F0FC26FB0F02008EFD09 /* Persistence */,
 				65486C7926F334A300845959 /* Preview Content */,
+				6597F0EF26F8DE50008EFD09 /* Star Wars Ships.entitlements */,
+				65486CA026F334D400845959 /* ViewModels */,
+				65486C9F26F334C600845959 /* Views */,
 			);
 			path = "Star Wars Ships";
 			sourceTree = "<group>";
@@ -189,10 +194,10 @@
 		65486C9E26F334B800845959 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				65486CA626F33DE500845959 /* Ship.swift */,
-				65486CA826F33F5F00845959 /* ShipResponse.swift */,
 				65486CC426F4269D00845959 /* Film.swift */,
 				65486CC626F426C300845959 /* People.swift */,
+				65486CA626F33DE500845959 /* Ship.swift */,
+				65486CA826F33F5F00845959 /* ShipResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,18 +205,18 @@
 		65486C9F26F334C600845959 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				65486CAE26F3531E00845959 /* ShipListItemView.swift */,
-				65486CB026F3591D00845959 /* ShipDetailsView.swift */,
-				65486CB626F3953F00845959 /* LoadingView.swift */,
-				65486CBA26F39D8600845959 /* FavouriteView.swift */,
-				65486CBC26F3FD9100845959 /* LogoView.swift */,
-				65486CBE26F3FFDF00845959 /* MetricView.swift */,
-				65486CC026F4007700845959 /* PropertyView.swift */,
-				65486CCA26F427AD00845959 /* FilmView.swift */,
-				65486CCC26F431F300845959 /* PilotView.swift */,
-				65751B4926F63A6000DDA66C /* MeasureView.swift */,
-				65751B5D26F7754D00DDA66C /* EndlessShipView.swift */,
 				65751B5F26F79D5600DDA66C /* DatePropertyView.swift */,
+				65751B5D26F7754D00DDA66C /* EndlessShipView.swift */,
+				65486CBA26F39D8600845959 /* FavouriteView.swift */,
+				65486CCA26F427AD00845959 /* FilmView.swift */,
+				65486CB626F3953F00845959 /* LoadingView.swift */,
+				65486CBC26F3FD9100845959 /* LogoView.swift */,
+				65751B4926F63A6000DDA66C /* MeasureView.swift */,
+				65486CBE26F3FFDF00845959 /* MetricView.swift */,
+				65486CCC26F431F300845959 /* PilotView.swift */,
+				65486CC026F4007700845959 /* PropertyView.swift */,
+				65486CB026F3591D00845959 /* ShipDetailsView.swift */,
+				65486CAE26F3531E00845959 /* ShipListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,8 +227,8 @@
 				6597F0FA26FAC287008EFD09 /* EndlessDataSource.swift */,
 				65751B5B26F773A300DDA66C /* EndlessShips.swift */,
 				65486CB426F38B8900845959 /* Favourites.swift */,
-				65486CC826F4276600845959 /* FilmViewModel.swift */,
 				65486CCE26F433D800845959 /* FetchViewModel.swift */,
+				65486CC826F4276600845959 /* FilmViewModel.swift */,
 				65486CD026F4341E00845959 /* PeopleViewModel.swift */,
 			);
 			path = ViewModels;
@@ -232,9 +237,9 @@
 		65486CA126F33AAC00845959 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				65486CA226F33AE600845959 /* JsonFetcher.swift */,
-				65486CA426F33BA500845959 /* FetchError.swift */,
 				65486CB226F37E5D00845959 /* CustomCache.swift */,
+				65486CA426F33BA500845959 /* FetchError.swift */,
+				65486CA226F33AE600845959 /* JsonFetcher.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -244,6 +249,23 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6597F0FC26FB0F02008EFD09 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				6597F0FD26FB0F2B008EFD09 /* Main.xcdatamodeld */,
+				6597F10026FB0FA7008EFD09 /* PersistenceController.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		6597F10226FB1273008EFD09 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				65486C7326F334A000845959 /* StarWarsShipsApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6597F0FF26FB0F2B008EFD09 /* Main.xcdatamodeld in Sources */,
 				6597F0FB26FAC287008EFD09 /* EndlessDataSource.swift in Sources */,
 				65486CAF26F3531E00845959 /* ShipListItemView.swift in Sources */,
 				65751B5C26F773A300DDA66C /* EndlessShips.swift in Sources */,
@@ -395,6 +418,7 @@
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
 				65486CC126F4007700845959 /* PropertyView.swift in Sources */,
 				65486CCB26F427AD00845959 /* FilmView.swift in Sources */,
+				6597F10126FB0FA7008EFD09 /* PersistenceController.swift in Sources */,
 				65486CCF26F433D800845959 /* FetchViewModel.swift in Sources */,
 				65486CA726F33DE500845959 /* Ship.swift in Sources */,
 				65486CB526F38B8900845959 /* Favourites.swift in Sources */,
@@ -753,6 +777,19 @@
 			productName = Utilities;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6597F0FD26FB0F2B008EFD09 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6597F0FE26FB0F2B008EFD09 /* Main.xcdatamodel */,
+			);
+			currentVersion = 6597F0FE26FB0F2B008EFD09 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65486C6826F334A000845959 /* Project object */;
 }

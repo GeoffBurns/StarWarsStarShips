@@ -30,7 +30,9 @@ struct LoadedShipListItem: View {
                     destination: ShipDetailsView(ship: ship))
                     {
                     EmptyView()
-                    } .buttonStyle(PlainButtonStyle())
+                    }
+                  .frame(width: 0)
+                  .opacity(0)
                   }
             VStack  (alignment: .center, spacing: 15){
               FavouriteView(ship: ship, size: 15)

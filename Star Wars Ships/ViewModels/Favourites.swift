@@ -6,33 +6,66 @@
 //
 
 import Foundation
-
+import CoreData
+ 
 class Favourites: ObservableObject {
     
-    @Published var favUrls = Set<String>()
+    let container: NSPersistentContainer
+    @Published var favorities: [FavoriteShip] = []
     
+    init() {
+        container = NSPersistentContainer(name: "Main")
+        container.loadPersistentStores { (description, error) in
+            if let error = error {
+                print("ERROR LOADING CORE DATA. \(error)")
+            }
+        }
+        load()
+    }
+    func load() {
+        let request = NSFetchRequest<FavoriteShip>(entityName: "FavoriteShip")
+        
+        do {
+            favorities = try container.viewContext.fetch(request)
+        } catch let error {
+            print("Error fetching. \(error)")
+        }
+    }
+    func like(url: String) {
+        let newFavoriteShip = FavoriteShip(context: container.viewContext)
+        newFavoriteShip.accessUrl = url
+        saveData()
+    }
+    func unlike(entity: FavoriteShip) {
+        container.viewContext.delete(entity)
+        saveData()
+    }
+    func saveData() {
+        do {
+            try container.viewContext.save()
+            load()
+        } catch let error {
+            print("CoreData Error saving. \(error)")
+        }
+    }
+    func getFavourite(_ url: String) -> FavoriteShip?
+    {
+       return favorities.first { $0.accessUrl == url }
+   
+    }
     func isFavourite(_ url: String) -> Bool
     {
-        return favUrls.contains(url)
-    }
-    func like(_ url: String)
-    {
-        favUrls.insert(url)
-    }
-    
-    func unlike(_ url: String)
-    {
-        favUrls.remove(url)
+       return getFavourite(url) != nil
     }
     func toggle(_ url: String)
     {
-        if isFavourite(url)
+        if let fav = getFavourite(url)
         {
-            unlike(url)
+            unlike(entity: fav)
         }
         else
         {
-            like(url)
+            like(url: url)
         }
     }
 }
