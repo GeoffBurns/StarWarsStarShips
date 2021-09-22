@@ -9,14 +9,11 @@ import SwiftUI
 
 struct DatePropertyView: View {
     var label : String
-    var property : String
+    var property : Date
     var value : String {
-        let dateString = property.components(separatedBy: "T")
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let date = dateFormatter.date(from: dateString.first ?? "")
-        dateFormatter.dateFormat = "d MMM y"
-        return dateFormatter.string(from: date ?? Date())
+        dateFormatter.dateFormat = "d MMM y HH:mm"
+        return dateFormatter.string(from: property)
     }
     var font : Font
     var body: some View {
@@ -31,6 +28,6 @@ struct DatePropertyView: View {
 
 struct DatePropertyView_Previews: PreviewProvider {
     static var previews: some View {
-        DatePropertyView(label: "Edited", property: "2014-12-20T21:23:49.870000Z", font: .caption)
+        DatePropertyView(label: "Edited", property: Date(), font: .caption)
     }
 }

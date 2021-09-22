@@ -9,16 +9,19 @@
 import Foundation
 import Combine
 
+
 struct JsonFetcher {
     
     static let cache = CustomCache<String, Decodable>()
     static let shared = JsonFetcher()
+    var decoder : JSONDecoder = JSONDecoder()
     
     var isCaching = true
     
+    
+    
     fileprivate func HttpSuccess<T>(_ data: Data, url: String) -> AnyPublisher<T, Publishers.Map<Publishers.MapError<Publishers.Decode<Just<JSONDecoder.Input>, T, JSONDecoder>, FetchError>, T>.Failure> {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let decoder = DecoderWithDates()
         return Just(data)
             .decode(type: T.self, decoder: decoder)
             .mapError {error in .jsonError(error.localizedDescription)}

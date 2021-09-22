@@ -24,16 +24,16 @@ struct Ship: Codable, Equatable {
     let starshipClass: String
     let pilots: [String]
     let films: [String]
-    let created: String
-    let edited: String
+    let created: Date
+    let edited: Date
     let url: String
      
     static let Mock = Ship(name: "TestShip", model: "TestModel", manufacturer: "" , costInCredits: "", length: "", maxAtmospheringSpeed: "", crew: "", passengers: "", cargoCapacity: "", consumables: "", hyperdriveRating: "", MGLT: "", starshipClass: "TestFighter", pilots: [], films:[],
-                           created: "", edited:"", url: "")
+                           created: Date(), edited: Date(), url: "")
     
     
     static let Loading = Ship(name: "Fetching Data", model: "", manufacturer: "" , costInCredits: "", length: "", maxAtmospheringSpeed: "", crew: "", passengers: "", cargoCapacity: "", consumables: "", hyperdriveRating: "", MGLT: "", starshipClass: "", pilots: [], films:[],
-                              created: "", edited:"", url: "")
+                              created: Date(), edited: Date(), url: "")
     
     static func ==(lhs: Ship, rhs: Ship) -> Bool {
         return lhs.url == rhs.url
