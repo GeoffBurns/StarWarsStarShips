@@ -16,7 +16,7 @@ struct FavouriteView: View {
             Button(action: {
                 favs.toggle(ship.url)
             }) {
-                if favs.isFavourite(ship.url)
+                if favs.contains(ship.url)
                 {
                     Image(systemName: "heart.fill").font(.system(size: size))
                 }

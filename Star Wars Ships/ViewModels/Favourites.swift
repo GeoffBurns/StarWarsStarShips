@@ -7,65 +7,20 @@
 
 import Foundation
 import CoreData
+import Utilities
+
+
  
-class Favourites: ObservableObject {
-    
-    let container: NSPersistentContainer
-    @Published var favorities: [FavoriteShip] = []
-    
+class Favourites: PersistentSet<FavoriteShip,String>  {
     init() {
-        container = NSPersistentContainer(name: "Main")
-        container.loadPersistentStores { (description, error) in
-            if let error = error {
-                print("ERROR LOADING CORE DATA. \(error)")
-            }
-        }
-        load()
+        super.init(containerName: "Main", entityName: "FavoriteShip")
     }
-    func load() {
-        let request = NSFetchRequest<FavoriteShip>(entityName: "FavoriteShip")
-        
-        do {
-            favorities = try container.viewContext.fetch(request)
-        } catch let error {
-            print("Error fetching. \(error)")
-        }
-    }
-    func like(url: String) {
-        let newFavoriteShip = FavoriteShip(context: container.viewContext)
-        newFavoriteShip.accessUrl = url
-        saveData()
-    }
-    func unlike(entity: FavoriteShip) {
-        container.viewContext.delete(entity)
-        saveData()
-    }
-    func saveData() {
-        do {
-            try container.viewContext.save()
-            load()
-        } catch let error {
-            print("CoreData Error saving. \(error)")
-        }
-    }
-    func getFavourite(_ url: String) -> FavoriteShip?
+    override func assign(_ entity: FavoriteShip, key: String)
     {
-       return favorities.first { $0.accessUrl == url }
-   
+        entity.accessUrl = key
     }
-    func isFavourite(_ url: String) -> Bool
-    {
-       return getFavourite(url) != nil
-    }
-    func toggle(_ url: String)
-    {
-        if let fav = getFavourite(url)
-        {
-            unlike(entity: fav)
-        }
-        else
-        {
-            like(url: url)
-        }
-    }
+    override func has(_ entity: FavoriteShip, key: String) -> Bool
+     {
+         return entity.accessUrl == key
+     }
 }
