@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 import Utilities
-
+import Persistence
 
  
 class Favourites: PersistentSet<FavoriteShip,String>  {

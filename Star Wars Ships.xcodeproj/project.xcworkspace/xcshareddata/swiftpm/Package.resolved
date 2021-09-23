@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Persistence",
+        "repositoryURL": "https://github.com/GeoffBurns/persistence",
+        "state": {
+          "branch": null,
+          "revision": "5cb939b85264d8372e87295ba40aa4a1df674834",
+          "version": "0.1.2"
+        }
+      },
+      {
         "package": "Utilities",
         "repositoryURL": "https://github.com/GeoffBurns/Utilities",
         "state": {

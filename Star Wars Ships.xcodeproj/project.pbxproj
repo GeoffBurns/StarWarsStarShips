@@ -36,7 +36,7 @@
 		6597F0FF26FB0F2B008EFD09 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6597F0FD26FB0F2B008EFD09 /* Main.xcdatamodeld */; };
 		6597F10126FB0FA7008EFD09 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597F10026FB0FA7008EFD09 /* PersistenceController.swift */; };
 		65C5506826FC698A00045AB5 /* JsonFetchUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65C5506726FC698A00045AB5 /* JsonFetchUI */; };
-		65C5506A26FC85F600045AB5 /* PersistentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5506926FC85F600045AB5 /* PersistentSet.swift */; };
+		65C5506D26FC933600045AB5 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 65C5506C26FC933600045AB5 /* Persistence */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +91,6 @@
 		6597F0EF26F8DE50008EFD09 /* Star Wars Ships.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Star Wars Ships.entitlements"; sourceTree = "<group>"; };
 		6597F0FE26FB0F2B008EFD09 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		6597F10026FB0FA7008EFD09 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		65C5506926FC85F600045AB5 /* PersistentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C5506D26FC933600045AB5 /* Persistence in Frameworks */,
 				6504DEDD26FB425100704D00 /* Utilities in Frameworks */,
 				65C5506826FC698A00045AB5 /* JsonFetchUI in Frameworks */,
 			);
@@ -237,7 +237,6 @@
 			children = (
 				6597F0FD26FB0F2B008EFD09 /* Main.xcdatamodeld */,
 				6597F10026FB0FA7008EFD09 /* PersistenceController.swift */,
-				65C5506926FC85F600045AB5 /* PersistentSet.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -269,6 +268,7 @@
 			packageProductDependencies = (
 				6504DEDC26FB425100704D00 /* Utilities */,
 				65C5506726FC698A00045AB5 /* JsonFetchUI */,
+				65C5506C26FC933600045AB5 /* Persistence */,
 			);
 			productName = "Star Wars Ships";
 			productReference = 65486C7026F334A000845959 /* Star Wars Ships.app */;
@@ -344,6 +344,7 @@
 			packageReferences = (
 				6597F0E726F8D814008EFD09 /* XCRemoteSwiftPackageReference "Utilities" */,
 				65C5506626FC698A00045AB5 /* XCRemoteSwiftPackageReference "JsonFetchUI" */,
+				65C5506B26FC933600045AB5 /* XCRemoteSwiftPackageReference "persistence" */,
 			);
 			productRefGroup = 65486C7126F334A000845959 /* Products */;
 			projectDirPath = "";
@@ -398,7 +399,6 @@
 				65486CC926F4276600845959 /* FilmViewModel.swift in Sources */,
 				65486C7426F334A000845959 /* StarWarsShipsApp.swift in Sources */,
 				65486CA926F33F5F00845959 /* ShipResponse.swift in Sources */,
-				65C5506A26FC85F600045AB5 /* PersistentSet.swift in Sources */,
 				65486CC126F4007700845959 /* PropertyView.swift in Sources */,
 				65486CCB26F427AD00845959 /* FilmView.swift in Sources */,
 				6597F10126FB0FA7008EFD09 /* PersistenceController.swift in Sources */,
@@ -756,6 +756,14 @@
 				minimumVersion = 0.1.1;
 			};
 		};
+		65C5506B26FC933600045AB5 /* XCRemoteSwiftPackageReference "persistence" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GeoffBurns/persistence";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -768,6 +776,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 65C5506626FC698A00045AB5 /* XCRemoteSwiftPackageReference "JsonFetchUI" */;
 			productName = JsonFetchUI;
+		};
+		65C5506C26FC933600045AB5 /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65C5506B26FC933600045AB5 /* XCRemoteSwiftPackageReference "persistence" */;
+			productName = Persistence;
 		};
 /* End XCSwiftPackageProductDependency section */
 
