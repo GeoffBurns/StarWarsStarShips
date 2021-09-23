@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import SwiftUI
+import JsonFetchUI
 
 class FilmViewModel: FetchViewModel {
     @Published var films : [Film] = []

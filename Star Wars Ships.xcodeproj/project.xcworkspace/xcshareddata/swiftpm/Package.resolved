@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "JsonFetchUI",
+        "repositoryURL": "https://github.com/GeoffBurns/JsonFetchUI",
+        "state": {
+          "branch": null,
+          "revision": "69cdab8243cdd2cfe1cc9f0192c6a0067feb543e",
+          "version": "0.1.5"
+        }
+      },
+      {
         "package": "Utilities",
         "repositoryURL": "https://github.com/GeoffBurns/Utilities",
         "state": {
